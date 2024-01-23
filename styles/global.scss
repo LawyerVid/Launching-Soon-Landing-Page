@@ -1,0 +1,54 @@
+@tailwind components;
+
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  .contentContainer {
+    @apply py-8 w-full h-full flex flex-col items-center;
+  }
+  .page-container-center {
+    @apply px-6 py-8 flex flex-col justify-center items-center min-h-screenWithoutNav gap-6;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.profileRound {
+  border-radius: 8px;
+}
+
+.profileRounded {
+  .profileRound {
+    border-radius: 50%;
+  }
+}
+
+.relativeScrollArea {
+  div[data-radix-scroll-area-viewport] {
+    position: relative;
+  }
+}
+
+.vid-anim-1,
+.vid-anim-2,
+.vid-anim-3,
+.vid-anim-4 {
+  opacity: 0;
+}
+
+.vid-anim-circ-left,
+.vid-anim-circ-right {
+  opacity: 0;
+}
+
+.vid-anim-circ-left {
+  scale: 0;
+}

@@ -1,0 +1,24 @@
+{
+  "contact": {
+    "email": "info@lawyervid.com",
+    "address": {
+      "street": "1016 W. Jackson Blvd. Suite 45",
+      "city": "Chicago, IL 60607"
+    }
+  },
+  "meetings": {
+    "organizerEmail": "info@lawyervid.com"
+  },
+  "social": {
+    "twitter": {
+      "url": "https://www.twitter.com"
+    },
+
+    "facebook": {
+      "url": "https://www.facebook.com"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com"
+    }
+  }
+}
