@@ -26,12 +26,13 @@ export const makeStore = (): ReturnType<typeof makeConfiguredStore> => {
         const persistConfig = {
             key: "root",
             whitelist: ["auth"],
-            storage: storage("lawyerVid")
+            storage: storage("lawyerVid-coming_soon")
         };
         const persistedReducer = persistReducer(persistConfig, combineReducers(rootReducer));
         let store: any = configureStore({
             reducer: persistedReducer,
             devTools: process.env.NODE_ENV !== "production",
+            // @ts-ignore
             preloadedState: initialState
         });
         store.__persistor = persistStore(store);

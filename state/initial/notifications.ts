@@ -1,10 +1,9 @@
-import type { serverClient } from "#/trpc/serverClient"
 
 interface InitialNotificationState {
     modals: {
         logout: boolean
         scheduleWithinAllowed: {
-            attorney?: NonNullable<Awaited<ReturnType<typeof serverClient.search.getAttorneyProfile>>>
+            attorney?: any
             timeFrame?: {
                 start: number
                 end: number
