@@ -7,6 +7,7 @@ import { cookies } from 'next/headers'
 import PageContentWrapper from '#/components/pageContentWrapper'
 import { Toaster } from '#/components/ui/toaster'
 import config from "#/lib/appConfig.json"
+import Script from 'next/script'
 
 
 const inter = Inter({
@@ -31,6 +32,13 @@ export default function RootLayout(props: {
             lang="en"
             className={clsx("group/html overscroll-y-none", darkMode && "dark")}
         >
+            <Script strategy="afterInteractive" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}`} />
+            <Script id="ga-init-script">
+                {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!}');`}
+            </Script>
             <body className={clsx("min-h-screen bg-background font-sans antialiased", inter.variable)}>
                 <PageContentWrapper>
                     {props.children}
