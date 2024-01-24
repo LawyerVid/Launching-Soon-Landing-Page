@@ -1,4 +1,5 @@
 import LandingHero from "#/components/landingHero";
+import { submitPageView } from "#/lib/gaActions";
 import "#/styles/global.scss"
 import ReactGA from "react-ga4";
 
@@ -13,6 +14,8 @@ export default function Home() {
             /* gtagOptions: {...}, // optional */
         },
     ]);
+
+    submitPageView("home")
 
 
     return (
