@@ -1,4 +1,24 @@
 {
+  "seo": {
+    "title": "Lawyer Vid",
+    "applicationName": "LawyerVid",
+    "description": "Some description here",
+    "authors": [
+      {
+        "name": "Anthony Boyle and the LawyerVid team."
+      }
+    ],
+    "keywords": [
+      "lawyer",
+      "attorney",
+      "consultation",
+      "free",
+      "legal",
+      "court",
+      "judge"
+    ],
+    "creator": "LawyerVid Team"
+  },
   "contact": {
     "email": "info@lawyervid.com",
     "address": {

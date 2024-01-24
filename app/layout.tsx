@@ -6,6 +6,16 @@ import clsx from 'clsx'
 import { cookies } from 'next/headers'
 import PageContentWrapper from '#/components/pageContentWrapper'
 import { Toaster } from '#/components/ui/toaster'
+import ReactGA from "react-ga4";
+import config from "#/lib/appConfig.json"
+
+ReactGA.initialize([
+    {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID!,
+        /* gaOptions: {...}, // optional */
+        /* gtagOptions: {...}, // optional */
+    },
+]);
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,9 +24,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-    title: 'Lawyer Vid',
-    description: 'Some description here',
+    ...config.seo
 }
+
 
 export default function RootLayout(props: {
     children: React.ReactNode

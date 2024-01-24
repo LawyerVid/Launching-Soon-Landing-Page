@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.2",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
@@ -19,12 +20,14 @@
     "axios": "^1.6.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "dotenv": "^16.4.0",
     "lucide-react": "^0.314.0",
     "next": "14.1.0",
     "next-connect": "^1.0.0",
     "npx": "^10.2.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-ga4": "^2.1.0",
     "react-redux": "^9.1.0",
     "redux-persist": "^6.0.0",
     "redux-persist-indexeddb-storage": "^1.0.4",

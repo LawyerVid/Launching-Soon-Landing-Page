@@ -1,5 +1,4 @@
 import { QuickLinkType } from '#/types/general'
-import Link from 'next/link'
 import React from 'react'
 
 
@@ -14,6 +13,7 @@ const FooterLinkItem = ({ item }: { item: QuickLinkType }) => {
         <a role="button" className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline cursor-not-allowed">{item.label}</a>
     )
 }
+
 
 const FooterCategory = ({ items, title }: FooterCategoryProps) => {
     return (
