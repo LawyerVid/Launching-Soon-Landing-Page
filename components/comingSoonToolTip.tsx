@@ -12,7 +12,7 @@ const ComingSoonToolTip = ({ children }: ComingSoonToolTipProps) => {
     return (
         <TooltipProvider>
             <Tooltip>
-                <TooltipTrigger>{children}</TooltipTrigger>
+                <TooltipTrigger asChild>{children}</TooltipTrigger>
                 <TooltipContent>
                     <p>{'We\'re not live yet, but we will be soon!'}</p>
                 </TooltipContent>
