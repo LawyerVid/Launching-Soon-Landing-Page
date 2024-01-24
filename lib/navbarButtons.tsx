@@ -7,7 +7,7 @@ export type AuthStatusValidationType = AuthStatusType | "Any" | "Validated-Any"
 interface NBHref {
     label: string
     validate: AuthStatusValidationType
-    href: Route,
+    href: Route | string,
     clicky?: () => void
 }
 
