@@ -21,7 +21,7 @@ const DisabledButton = ({ label, ...props }: DisabledButtonProps) => {
     }
 
     const handleRect = () => {
-        let em = document.getElementById(id)?.parentElement
+        let em = document.getElementById(id)
         if (!em) return
         em.style.cursor = "not-allowed"
         em.style.transition = "all 0.2s ease-in"

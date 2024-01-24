@@ -8,11 +8,14 @@ export default function Home() {
     ReactGA.initialize([
         {
             trackingId: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!,
-            gaOptions: {
-                page: "/"
-            }
+            /* gaOptions: { */
+            /*     page: "/" */
+            /* } */
             /* gtagOptions: {...}, // optional */
         },
+        {
+            trackingId: "G-F9M1JQV222"
+        }
     ]);
 
     submitPageView("home")
